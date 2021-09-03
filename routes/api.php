@@ -19,7 +19,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('categories', 'App\Http\Controllers\Api\CategoryController@index');
-
+Route::get('categories/{category}', 'App\Http\Controllers\Api\CategoryController@show');
 
 //Users/valeriygorbunov/Documents/koropapi.loc/app/Http/Controllers/Api/CategoryController.php
 //Route::get('categories/{category}', 'Api\CategoryController@show');
