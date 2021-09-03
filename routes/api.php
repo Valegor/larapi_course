@@ -23,11 +23,11 @@ Route::get('categories/{category}', 'App\Http\Controllers\Api\CategoryController
 
 //Users/valeriygorbunov/Documents/koropapi.loc/app/Http/Controllers/Api/CategoryController.php
 //Route::get('categories/{category}', 'Api\CategoryController@show');
-//Route::post('categories', 'Api\CategoryController@store');
-//Route::put('categories/{category}', 'Api\CategoryController@update');
-//Route::delete('categories/{category}', 'Api\CategoryController@destroy');
+Route::post('categories', 'App\Http\Controllers\Api\CategoryController@store');
+Route::put('categories/{category}', 'App\Http\Controllers\Api\CategoryController@update');
+Route::delete('categories/{category}', 'App\Http\Controllers\Api\CategoryController@destroy');
 
 // Route::apiResource('categories', 'Api\CategoryController')
 //     ->middleware('auth:sanctum');
 
-// Route::get('products', 'Api\ProductController@index');
+Route::get('products', 'App\Http\Controllers\Api\ProductController@index');
